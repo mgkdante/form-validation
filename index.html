@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Test</title>
+  </head>
+  <body>
+    <div>
+      <form action="/">
+        <p>
+          Required fields are followed by <span aria-label="Required">*</span>
+        </p>
+        <fieldset>
+          <legend>Contact</legend>
+          <ul>
+            <li>
+              <label for="email">Email<span aria-label="Required">*</span>:</label>
+              <input type="email" id="email" name="user_email" required/>
+            </li>
+
+            <li>
+              <label for="country">Country<span aria-label="Required">*</span>:</label>
+              <select id="country" name="user_country">
+                <option value="ca">Canada</option>
+                <option value="us">United States</option>
+                <option value="gb">Great Britain</option>
+                <option value="jp">Japan</option>
+              </select>
+            </li>
+
+            <li>
+              <label for="zip">Zip<span aria-label="Required">*</span>: </label>
+              <input type="text" id="zip" name="user_zip" required/>
+            </li>
+
+            <li>
+              <label for="password">Password<span aria-label="Required">*</span>:</label>
+              <input type="password" id="password" name="user_password" required/>
+            </li>
+
+            <li>
+              <label for="confirm-password">Confirm Password<span aria-label="Required">*</span>:</label>
+              <input type="password" id="confirm-password" name="user_password-confirm" required/>
+            </li>
+
+            <li class="button">
+              <button type="submit" id="submit">Submit!</button>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
